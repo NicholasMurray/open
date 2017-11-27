@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+// app
+@import './app/app.component.scss';
+
+// default
+@import './app/components/components.scss';
+
+// grid
+@import './assets/layout/grid.scss';
+
+// theme
+@import './theme.scss';
+
+
+
+
+
