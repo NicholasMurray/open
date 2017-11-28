@@ -1,6 +1,5 @@
-[![CI Status]
-   (http://img.shields.io/travis/open/open.svg?style=flat)]
-   (https://travis-ci.org/NicholasMurray/open)
+# CI Build Status
+[![CI Status](https://travis-ci.org/NicholasMurray/open.svg?branch=master)](https://travis-ci.org/NicholasMurray/open)
 
 # Open
 
