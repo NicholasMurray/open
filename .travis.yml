@@ -5,10 +5,9 @@ cache:
   directories:
   - node_modules
 script:
-  - npm test
-  - npm run build
+  - ng test
+  - ng build
 deploy:
-  provider: pages
   skip_cleanup: true
   github_token: $github_token
   local_dir: build
