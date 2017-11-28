@@ -1,3 +1,7 @@
+[![CI Status]
+   (http://img.shields.io/travis/open/open.svg?style=flat)]
+   (https://travis-ci.org/NicholasMurray/open)
+
 # Open
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
