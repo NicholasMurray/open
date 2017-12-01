@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Deployed to zeit now
 
-[https://open-perkzpojyd.now.sh/](https://open-perkzpojyd.now.sh/)
+[https://open-iximqzanya.now.sh/](https://open-iximqzanya.now.sh/)
 
 [more info](https://medium.com/@littleStudent/deploying-angular-cli-projects-to-now-sh-e739c31053ac)
 
