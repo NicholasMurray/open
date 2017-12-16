@@ -25,11 +25,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Deployed to zeit now
+## Deployed to firebase
 
-[https://open-iximqzanya.now.sh/](https://open-iximqzanya.now.sh/)
-
-[more info](https://medium.com/@littleStudent/deploying-angular-cli-projects-to-now-sh-e739c31053ac)
+[https://angularopen.firebaseapp.com//](https://angularopen.firebaseapp.com//)
 
 ## Further help
 
