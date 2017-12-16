@@ -1,12 +1,9 @@
-// .wrapper {
-//   width: 60em;
-//   margin: 0 auto;
-// }
+@import '../assets/modules/_colors.scss';
 
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #3AAFAB;
-  color: #fff;
+  background: $teal;
+  color: $white;
   margin: 1% 5% 2.5% 5%;
 }
 
@@ -28,11 +25,11 @@ body {
 
 .nav ul li {
   list-style: none;
-  color: #fff;
+  color: $white;
 }
 
 .nav ul li a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -55,15 +52,3 @@ body {
     "footer   footer";
   }
 }
-
-// @media only screen and (min-width: 600px)   {
-//   .wrapper {
-//     grid-gap: 20px;
-//     grid-template-columns: 120px auto 120px;
-//     grid-template-areas:
-//     "header  header  header"
-//     "sidebar content"
-//     "footer  footer  footer";
-//     max-width: 600px;
-//   }
-
