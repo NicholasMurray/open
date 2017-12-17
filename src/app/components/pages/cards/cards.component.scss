@@ -1,0 +1,19 @@
+.cards__wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+   "card--a"
+   "card--b"
+   "card--c"
+   "card--d"
+}
+
+@media only screen and (min-width: 700px)  {
+  .cards__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "card--a card--b"
+    "card--c card--d";
+  }
+}
+
