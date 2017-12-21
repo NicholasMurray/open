@@ -4,11 +4,11 @@ body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
   background: $teal;
   color: $white;
-  margin: 1% 5% 2.5% 5%;
 }
 
 .header {
   grid-area: header;
+  background-color: darken($teal,5%);;
 }
 
 .nav {
@@ -23,14 +23,28 @@ body {
   grid-area: footer;
 }
 
+
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
 .nav ul li {
   list-style: none;
   color: $white;
+  margin: 0;
+  display: inline-block;
+  padding: 0 20px 0 0;
 }
 
 .nav ul li a {
   color: $white;
   text-decoration: none;
+}
+
+.hd--1 {
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -43,12 +57,54 @@ body {
    "footer"
 }
 
-@media only screen and (min-width: 700px)  {
-.wrapper {
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas:
-    "header   header"
-    "nav  content"
-    "footer   footer";
+.container--header {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
+.togglesidebarnav {
+  transform: translateX(610px);
+}
+
+@media only screen and (max-width: 599px) {
+
+  .container--header {
+    justify-content:flex-start;
+    align-items:middle;
   }
+
+  .nav {
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    bottom: 0;
+    height: 100%;
+    left: -610px;
+    position: absolute;
+    top: 5rem;
+    transition: transform .3s ease-in-out;
+    width: 599px;
+    z-index: 1;
+  }
+
+  .nav ul li {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+  .header {
+    display: grid;
+  }
+
+  .hd--1 {
+    font-size: 1.5rem;
+  }
+
+  .img--header {
+    height: 50px;
+    width: 50px;
+  }
+
 }
