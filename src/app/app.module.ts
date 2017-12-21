@@ -5,6 +5,8 @@ import { CardComponent, CardHeaderComponent, CardBodyComponent, CardFooterCompon
 import { AppRoutingModule } from './/app-routing.module';
 import { CardsComponent } from './components/pages/cards/cards.component';
 import { FormfieldComponent } from './components/pages/formfield/formfield.component';
+import { HamburgerComponent } from './components/menu/hamburger/hamburger.component';
+import { IndexComponent } from './components/pages/index/index.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FormfieldComponent } from './components/pages/formfield/formfield.compo
     CardBodyComponent,
     CardFooterComponent,
     CardsComponent,
-    FormfieldComponent
+    FormfieldComponent,
+    HamburgerComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

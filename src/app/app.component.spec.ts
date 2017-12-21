@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { CardComponent, CardHeaderComponent, CardBodyComponent, CardFooterComponent } from './components/containers/card';
+import { HamburgerComponent } from './components/menu/hamburger/hamburger.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -12,7 +13,8 @@ describe('AppComponent', () => {
         CardComponent,
         CardHeaderComponent,
         CardBodyComponent,
-        CardFooterComponent
+        CardFooterComponent,
+        HamburgerComponent
       ],
     }).compileComponents();
   }));
@@ -26,10 +28,10 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('Angular Open');
   }));
-  it('should render title in a h1 tag', async(() => {
+  it('should render title in a div tag with a class of hd--1', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular Open!');
+    expect(compiled.querySelector('div.hd--1').textContent).toContain('Welcome to Angular Open!');
   }));
 });
