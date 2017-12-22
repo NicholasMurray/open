@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'open-hamburger',
@@ -9,13 +9,19 @@ export class HamburgerComponent implements OnInit {
 
   constructor() { }
 
-  isHamburgerActive = false;
+  // isHamburgerActive = false;
+
+  // @Input()
+  // isHamBurgerFlipDisabled: boolean = false;
+  @Input()
+  flipHamburger: boolean = true;
 
   ngOnInit() {
   }
 
-  toggleActive() {
-    this.isHamburgerActive = !this.isHamburgerActive;
-  }
-
+  // toggleActive() {
+  //   if (!this.isHamBurgerFlipDisabled) {
+  //     this.isHamburgerFlipped = !this.isHamburgerFlipped;
+  //   }
+  // }
 }

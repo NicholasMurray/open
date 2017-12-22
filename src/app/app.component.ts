@@ -11,12 +11,16 @@ export class AppComponent  implements OnInit {
 
   title = 'Angular Open';
   isSidebarActive = false;
+  isHamburgerFlipped: boolean = false;
+
+  initialCount: number = 10;
 
   ngOnInit() {
   }
 
   toggleSidebarActive() {
     console.log('side bar toggled');
+    this.isHamburgerFlipped = !this.isHamburgerFlipped;
     this.isSidebarActive = !this.isSidebarActive;
   }
 
