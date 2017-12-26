@@ -1,0 +1,38 @@
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  list-style: none;
+  color: $white;
+  margin: 0;
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+.nav ul li a {
+  color: $white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 599px) {
+
+  .nav {
+    background-color: rgba($black, 0.99); /* Black w/opacity */
+    bottom: 0;
+    height: 100%;
+    left: -100vw;
+    position: absolute;
+    top: 0;
+    transition: transform .5s ease-in-out;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .nav ul li {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+}

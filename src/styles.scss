@@ -1,21 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+// partials
+@import './assets/partials/_reset.scss';
+@import './assets/partials/_base.scss';
+@import './assets/partials/_headings.scss';
+@import './assets/partials/_nav.scss';
+
+
 
 // app
 @import './app/app.component.scss';
 
 // default
-@import './app/components/components.scss';
+@import './app/components/_components.scss';
 
 // grid
-@import './assets/layout/grid.scss';
+@import './assets/layout/_grid.scss';
+@import './assets/layout/_header.scss';
 
 // modules
 @import './assets/modules/_colors.scss';
 
+
 // theme
 @import './theme.scss';
-
-
-
-
-

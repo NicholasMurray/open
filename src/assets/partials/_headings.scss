@@ -1,0 +1,23 @@
+.hd {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hd--1 {
+  font-size: 2rem;
+}
+
+.hd--2 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 599px) {
+
+  .hd--1 {
+    font-size: 1.3rem;
+  }
+
+  .hd--2 {
+    font-size: 1.1rem;
+  }
+}

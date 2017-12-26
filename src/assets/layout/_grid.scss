@@ -1,0 +1,36 @@
+.wrapper--page {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+   "header"
+   "nav"
+   "content"
+   "footer"
+}
+
+.header {
+  grid-area: header;
+  background-color: darken($teal,5%);;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 599px) {
+
+  .header {
+    display: grid;
+  }
+
+}

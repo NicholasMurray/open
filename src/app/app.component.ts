@@ -19,7 +19,6 @@ export class AppComponent  implements OnInit {
   }
 
   toggleSidebarActive() {
-    console.log('side bar toggled');
     this.isHamburgerFlipped = !this.isHamburgerFlipped;
     this.isSidebarActive = !this.isSidebarActive;
   }
