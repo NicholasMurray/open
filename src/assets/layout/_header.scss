@@ -1,0 +1,34 @@
+
+.container--header {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
+.togglesidebarnav {
+  transform: translateX(100vw);
+}
+
+@media only screen and (max-width: 599px) {
+
+  .container--header {
+    justify-content:flex-start;
+    align-items:middle;
+  }
+
+  .container--hamBurger {
+    display: flex;
+  }
+
+  .container--hamBurger open-hamburger {
+    margin-left: auto;
+  }
+
+  .img--header {
+    height: 50px;
+    width: 50px;
+  }
+
+}
