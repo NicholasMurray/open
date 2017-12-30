@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FormfieldPageComponent } from './formfield-page.component';
+import { FormfieldComponent } from '../../controls/formfield/formfield.component';
 
 describe('FormfieldPageComponent', () => {
   let component: FormfieldPageComponent;
@@ -8,7 +8,7 @@ describe('FormfieldPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormfieldPageComponent ]
+      declarations: [ FormfieldPageComponent, FormfieldComponent ]
     })
     .compileComponents();
   }));
