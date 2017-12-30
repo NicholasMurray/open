@@ -2,11 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CardComponent, CardHeaderComponent, CardBodyComponent, CardFooterComponent } from './components/containers/card';
+import { FormfieldComponent } from './components/controls/formfield/formfield.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CardsComponent } from './components/pages/cards/cards.component';
-import { FormfieldComponent } from './components/pages/formfield/formfield.component';
+import { CardsPageComponent } from './components/pages/cards-page/cards-page.component';
+import { FormfieldPageComponent } from './components/pages/formfield-page/formfield-page.component';
+import { IndexPageComponent } from './components/pages/index-page/index-page.component';
 import { HamburgerComponent } from './components/menu/hamburger/hamburger.component';
-import { IndexComponent } from './components/pages/index/index.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { IndexComponent } from './components/pages/index/index.component';
     CardHeaderComponent,
     CardBodyComponent,
     CardFooterComponent,
-    CardsComponent,
+    CardsPageComponent,
     FormfieldComponent,
+    FormfieldPageComponent,
     HamburgerComponent,
-    IndexComponent
+    IndexPageComponent
   ],
   imports: [
     BrowserModule,

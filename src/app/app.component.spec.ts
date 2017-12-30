@@ -32,6 +32,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('div.hd--1').textContent).toContain('Welcome to Angular Open!');
+    expect(compiled.querySelector('div.hd--1').textContent).toContain('Angular Open');
   }));
 });

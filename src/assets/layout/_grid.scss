@@ -1,6 +1,5 @@
 .wrapper--page {
   display: grid;
-  grid-gap: 1em;
   grid-template-areas:
    "header"
    "nav"
@@ -10,17 +9,22 @@
 
 .header {
   grid-area: header;
-  background-color: darken($teal,5%);;
+  background-color: darken($teal,20%);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+  margin-bottom: 2px;
 }
 
 .nav {
   grid-area: nav;
+  background-color: darken($teal,10%);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .content {
   grid-area: content;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer {
