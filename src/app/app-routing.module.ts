@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './components/pages/index/index.component';
-import { CardsComponent } from './components/pages/cards/cards.component';
-import { FormfieldComponent } from './components/pages/formfield/formfield.component';
+import { IndexPageComponent } from './components/pages/index-page/index-page.component';
+import { CardsPageComponent } from './components/pages/cards-page/cards-page.component';
+import { FormfieldPageComponent } from './components/pages/formfield-page/formfield-page.component';
 
 const routes: Routes = [
-  { path: '', component: IndexComponent },
-  { path: 'cards', component: CardsComponent },
-  { path: 'formfield', component: FormfieldComponent }
+  { path: '', component: IndexPageComponent },
+  { path: 'cards', component: CardsPageComponent },
+  { path: 'formfield', component: FormfieldPageComponent }
 ];
 
 @NgModule({

@@ -9,19 +9,10 @@ export class HamburgerComponent implements OnInit {
 
   constructor() { }
 
-  // isHamburgerActive = false;
-
-  // @Input()
-  // isHamBurgerFlipDisabled: boolean = false;
   @Input()
   flipHamburger: boolean = true;
 
   ngOnInit() {
   }
 
-  // toggleActive() {
-  //   if (!this.isHamBurgerFlipDisabled) {
-  //     this.isHamburgerFlipped = !this.isHamburgerFlipped;
-  //   }
-  // }
 }
